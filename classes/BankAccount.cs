@@ -24,6 +24,7 @@ namespace Classes
         // PROPERTIES
         public string Number { get; }
         public string Owner { get; set; }
+        public decimal Balance { get; }
 
         // CONSTRUCTORS
         public BankAccount(string name, decimal initialBalance)
