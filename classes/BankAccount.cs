@@ -25,6 +25,12 @@ namespace Classes
         public string Number { get; }
         public string Owner { get; set; }
 
+        // CONSTRUCTORS
+        public BankAccount(string name, decimal initialBalance)
+        {
+            this.Owner = name;
+        }
+
         // METHODS
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
