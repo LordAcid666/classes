@@ -21,9 +21,11 @@ namespace Classes
 {
     public class BankAccount
     {
+        // PROPERTIES
         public string Number { get; }
         public string Owner { get; set; }
 
+        // METHODS
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
 
