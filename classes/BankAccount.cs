@@ -30,6 +30,7 @@ namespace Classes
         public BankAccount(string name, decimal initialBalance)
         {
             this.Owner = name;
+            this.Balance = initialBalance;
         }
 
         // METHODS
