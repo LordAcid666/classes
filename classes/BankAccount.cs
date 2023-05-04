@@ -19,7 +19,19 @@ I prelievi non possono comportare un saldo negativo.
 
 namespace classes
 {
-    internal class BankAccount
+    public class BankAccount
     {
+        public string Number { get; }
+        public string Owner { get; set; }
+
+        public void MakeDeposit(decimal amount, DateTime date, string note)
+        {
+
+        }
+
+        public void MakeWithdrawal(decimal amount, DateTime date, string note)
+        {
+
+        }
     }
 }
