@@ -32,6 +32,9 @@ namespace Classes
         {
             this.Owner = name;
             this.Balance = initialBalance;
+
+            this.Number = accountNumberSeed.ToString();
+            accountNumberSeed++;
         }
 
         // METHODS
