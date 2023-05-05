@@ -37,6 +37,8 @@ namespace Classes
             accountNumberSeed++;
         }
 
+        private List<Transaction> allTransactions = new List<Transaction>();  
+
         // METHODS
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
