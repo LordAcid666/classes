@@ -42,11 +42,11 @@ namespace Classes
         // CONSTRUCTORS
         public BankAccount(string name, decimal initialBalance)
         {
-            this.Owner = name;
-            this.Balance = initialBalance;
-
             this.Number = accountNumberSeed.ToString();
             accountNumberSeed++;
+
+            this.Owner = name;
+            MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
         }
 
         private List<Transaction> allTransactions = new List<Transaction>();  
