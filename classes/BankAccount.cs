@@ -54,7 +54,12 @@ namespace Classes
         // METHODS
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
-
+            if (amount <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
+            }
+            var deposit = new Transaction(amount, date, note);
+            allTransactions.Add(deposit);
         }
 
         public void MakeWithdrawal(decimal amount, DateTime date, string note)
