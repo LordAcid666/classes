@@ -25,7 +25,8 @@ namespace Classes
         private static int accountNumberSeed = 1234567890;
         public string Number { get; }
         public string Owner { get; set; }
-        public decimal Balance {
+        public decimal Balance 
+        {
             get
             {
                 decimal balance = 0;
